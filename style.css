@@ -1,0 +1,464 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Advent Pro', sans-serif;
+}
+
+
+/* CSS PARA EL MENU */
+
+header {
+    box-shadow: 0 10px 25px black ;
+}
+
+.parallax{
+    background-image: url("./IMAGENES/HEADER/banner-caro-2.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    
+}
+
+.logoCaro {
+    display: none;
+}
+
+
+.parallax ul {
+    padding: 100px;
+    text-align: right;
+    text-shadow: 0 5px 5px black;
+    }
+
+span nav ul li{
+    display: inline-block;
+    margin: 0 0 0 0;
+}
+
+span nav ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px 5px;
+    color: white
+}
+
+
+/* CSS PARA EL MAIN DEL INDEX */
+
+.mainIndex {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    text-align: center;
+    color: black
+}
+
+/* CSS PARA EL MAIN DE SOBRE MI */
+
+.tituloSobreMi {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    text-align: center;
+    padding: 25px;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: "parrafoa fotoa"
+                        "fotob parrafob"
+                        "parrafoc fotoc";
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.grid__parrafoa {
+    grid-area: parrafoa;
+    place-self: center;
+    text-align: center;
+    border: 5px solid rgba(247, 171, 31, 0.993);
+    padding: 20px;
+}
+
+.grid__fotoa {
+    grid-area: fotoa;
+    place-self: center;
+    
+}
+
+.grid__fotob {
+    grid-area: fotob;
+    place-self: center;
+}
+
+.grid__parrafob {
+    grid-area: parrafob;
+    place-self: center;
+    text-align: center;
+    border: 5px solid rgb(58, 194, 24) ;
+    padding: 20px;
+}
+
+.grid__fotoc {
+    grid-area: fotoc;
+    place-self: center;
+}
+
+.grid__parrafoc{
+    grid-area: parrafoc;
+    place-self: center;
+    text-align: center;
+    border: 5px solid rgba(255, 105, 180, 0.932) ;
+    padding: 20px;
+}
+
+
+
+/* CSS PARA FORMACION */
+
+
+section ol li {
+    list-style-type: none;
+    border: 7px;
+    border-style: solid;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.sectionColorAmarillo {
+    border-color: rgba(247, 171, 31, 0.993);
+    margin-bottom: 15px;
+    width: 600px;
+    text-align: center;
+    margin-left: 60px;
+}
+
+.sectionColorVerde {
+    border-color: rgb(58, 194, 24);
+    margin-bottom: 15px;
+    width: 600px;
+    text-align: center;
+    margin-left: 650px;
+}
+
+.sectionContactoAzul {
+    border-color: rgba(0, 183, 255, 0.795);
+    margin-bottom: 15px;
+    width: 600px;
+    text-align: center;
+    margin-left: 60px;
+}
+
+.sectionContactoRosa {
+    border-color: rgba(255, 105, 180, 0.932);
+    margin-bottom: 15px;
+    width: 600px;
+    text-align: center;
+    margin-left: 650px;
+}
+
+
+/* CSS PARA LA DESCRIPCION PORTFOLIO*/
+
+h2 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.flexboxParaElMain {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.divEditorial {
+    background-color: rgba(247, 171, 31, 0.993);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    width: 300px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.divEditorial__img{
+    margin-bottom: 10px;
+}
+
+.divAnimacion{
+    background-color: rgb(58, 194, 24);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    width: 300px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.divVideosInstitucionales {
+    background-color: rgba(0, 183, 255, 0.795);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    width: 300px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.divArquigrafia {
+    background-color: rgba(255, 105, 180, 0.932);
+    border-radius: 10px;  
+    text-align: center;  
+    padding: 10px;
+    width: 300px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+/* CSS PARA CONTACTO */
+
+.sectionContacto {
+    height: 400px;
+    width: 400px;
+    border-radius: 30px;
+    background-color: green;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sectionContacto__titulo {
+    padding: 50px 0 0 0;
+    color: white;
+}
+
+.sectionContacto__items {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.sectionContacto__items--nombreycaja{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+
+.sectionContacto__items--botones {
+    padding: 30px;
+}
+
+.sectionContacto__buttons {
+    cursor: pointer;
+}
+
+.formularioGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.formularioGrid__texto {
+ text-align: left;
+}
+
+/* CLASES PARA EL FOOTER */
+
+.footer{
+    background-color: rgba(0, 183, 255, 0.795);
+    margin-top: 35px;
+}
+
+.flexboxparafooter{
+    display: flex;
+}
+
+.flexboxparafooter__primeraseccion{
+justify-content: space-evenly;
+}
+
+
+.flexboxparafooter__primeraseccion--centrar{
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+.flexboxparafooter__segundaseccion{
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.tamanoImagen{
+    width: 50px;
+    height: 50px;
+}
+
+.tamanoMapa{
+    width: 60px;
+    height: 60px;
+}
+
+.tamanoTexto {
+    font-size: 13px;
+}
+
+.flechita{
+    text-align: right;
+}  
+
+@media (max-width:1185px) {
+
+    .sectionColorVerde {
+        margin-left:150px;
+        width: 70%;
+    }
+
+    .sectionColorAmarillo {
+        width:70%;
+        margin-left:150px;
+    }
+
+    .sectionContactoRosa{
+        width:70%;
+        margin-left:150px;
+    }
+
+    .sectionContactoAzul {
+        width:70%;
+        margin-left:150px;
+
+    }
+}
+
+@media (max-width:1024px) {
+
+    .flexboxparafooter__primeraseccion {
+        display: none;
+    }
+    .flexboxParaElMain {
+        flex-direction: column;
+        place-items: center;
+    }
+
+    .divEditorial {
+        margin-bottom: 15PX;
+    }
+
+    .divAnimacion {
+        margin-bottom: 15PX; 
+    }
+
+    .divVideosInstitucionales {
+        margin-bottom: 15PX;   
+    }
+
+}
+
+@media (max-width:850px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        background-color: rgba(0, 183, 255, 0.795);
+            }
+
+}
+
+
+@media (max-width:768px) {
+
+    .parallax {
+        display: none;
+    }
+
+.logoCaro {
+    background-color: chartreuse;
+    display: flex;
+    width: 100%;
+    
+}
+
+    span nav ul li {
+        display: none;
+        max-width: 480px;
+    }
+
+    .sectionColorVerde {
+        margin: 10px 90px ;
+        width: 70%;
+    }
+
+    .sectionColorAmarillo {
+        margin: 10px 90px ;
+        width: 70%;
+    }
+
+    .sectionContactoRosa{
+        margin: 10px 90px ;
+        width: 70%;
+    }
+
+    .sectionContactoAzul {
+        margin: 10px 90px ;
+        width: 70%;
+
+    }
+
+
+}
+
+@media (max-width:480px) {
+
+    .footer {
+        width: auto;
+    }
+
+
+    .flexboxparafooter__segundaseccion {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    } 
+
+    .sectionColorVerde {
+        margin: 10px 45px ;
+        width: 70%;
+    }
+
+    .sectionColorAmarillo {
+        margin: 10px 45px ;
+        width: 70%;
+    }
+
+    .sectionContactoRosa{
+        margin: 10px 45px ;
+        width: 70%;
+    }
+
+    .sectionContactoAzul {
+        margin: 10px 45px ;
+        width: 70%;
+
+    }
+}
+
