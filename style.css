@@ -5,7 +5,9 @@
 
 body{
     font-family: 'Advent Pro', sans-serif;
+    background-color: rgb(236, 225, 172);
 }
+
 
 
 /* CSS PARA EL MENU */
@@ -44,7 +46,27 @@ span nav ul li a {
     font-size: 15px;
     font-weight: bold;
     padding: 15px 5px;
-    color: white
+    color: white;
+}
+
+.transicionesRosa {
+    transition: all 0.5s;
+}
+
+.transicionesRosa:hover{
+    font-size: 18px;
+    background-color: rgba(255, 105, 180, 0.932);
+    border-radius: 45px;
+}
+
+.transicionesVerde {
+    transition: all 0.5s;
+}
+
+.transicionesVerde:hover {
+    font-size: 18px;
+    background-color: rgb(58, 194, 24);
+    border-radius: 45px;
 }
 
 
@@ -54,8 +76,9 @@ span nav ul li a {
     margin-top: 150px;
     margin-bottom: 150px;
     text-align: center;
-    color: black
+    color: black;
 }
+
 
 /* CSS PARA EL MAIN DE SOBRE MI */
 
@@ -279,6 +302,44 @@ h3 {
  text-align: left;
 }
 
+
+.trianguloRosa {
+    height: 40px;
+    width: 40px;
+   display: flex;
+   position: absolute;
+   left: 250px;
+   top: 400px;
+   transform: rotate(180deg);
+   animation: movimientoTrianguloRosa 1s infinite alternate;
+}
+
+.trianguloAzul {
+    height: 40px;
+    width: 40px;
+   display: flex;
+   position: absolute;
+   left: 1100px;
+   top: 400px;
+   transform: rotate(180deg);
+   animation: movimientoTrianguloRosa 1s infinite alternate;
+    
+}
+
+
+
+@keyframes movimientoTrianguloRosa {
+    from {
+        top:400px;
+    }
+    
+    to {
+        top:600px;
+    }
+}
+
+
+
 /* CLASES PARA EL FOOTER */
 
 .footer{
@@ -348,6 +409,7 @@ justify-content: space-evenly;
     }
 }
 
+
 @media (max-width:1024px) {
 
     .flexboxparafooter__primeraseccion {
@@ -370,6 +432,15 @@ justify-content: space-evenly;
         margin-bottom: 15PX;   
     }
 
+    .trianguloRosa {
+        left: 150px;
+    }
+
+    .trianguloAzul {
+        left:800px;
+    }
+
+
 }
 
 @media (max-width:850px) {
@@ -381,6 +452,15 @@ justify-content: space-evenly;
     .footer {
         background-color: rgba(0, 183, 255, 0.795);
             }
+        
+    .trianguloRosa {
+        left: 80px;
+    }
+
+    .trianguloAzul {
+        left:800px;
+    }
+
 
 }
 
@@ -424,6 +504,13 @@ justify-content: space-evenly;
 
     }
 
+ .trianguloRosa {
+        left: 20px;
+    }
+
+.trianguloAzul {
+        left: 700px;
+    }
 
 }
 
@@ -460,5 +547,15 @@ justify-content: space-evenly;
         width: 70%;
 
     }
+
+    .trianguloRosa {
+        display: none;
+    }
+
+
+    .trianguloAzul {
+        display: none;
+    }
+
 }
 
