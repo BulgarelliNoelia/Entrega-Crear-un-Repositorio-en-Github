@@ -103,6 +103,9 @@ ul.slider li {
     transition: opacity 0.5s;
 }
 
+
+
+
 /* para que no se salgan las imagenes */
 
 ul.slider li img {
@@ -418,24 +421,24 @@ h3 {
 
 
 .trianguloRosa {
-    height: 40px;
-    width: 40px;
+    height: 70px;
+    width: 70px;
    display: flex;
    position: absolute;
    left: 250px;
    top: 400px;
-   transform: rotate(90deg);
+   /* transform: rotate(90deg); */
    animation: movimientoTrianguloRosa 1s infinite alternate;
 }
 
 .trianguloAzul {
-    height: 40px;
-    width: 40px;
+    height: 70px;
+    width: 70px;
    display: flex;
    position: absolute;
-   left: 1100px;
+   left: 1250px;
    top: 400px;
-   transform: rotate(-90deg);
+  /*  transform: rotate(-90deg); */
    animation: movimientoTrianguloRosa 1s infinite alternate;
     
 }
@@ -574,6 +577,9 @@ justify-content: space-evenly;
     .trianguloAzul {
         left:800px;
     }
+
+
+
 
 
 }
