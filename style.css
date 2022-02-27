@@ -76,8 +76,9 @@ span nav ul li a {
     margin-top: 150px;
     margin-bottom: 150px;
     text-align: center;
-    color: black;
+    color: black; 
 }
+
 
 
 /* CSS PARA EL MAIN DE SOBRE MI */
@@ -209,6 +210,42 @@ h3 {
     display: flex;
     justify-content: space-evenly;
 }
+
+.flexboxParaElMain .divEditorial {
+    transition: all 0.5s;
+}
+
+.flexboxParaElMain .divEditorial:hover {
+    transform: translateY(-15px);
+}
+
+.flexboxParaElMain .divAnimacion {
+    transition: all 0.5s;
+}
+
+.flexboxParaElMain .divAnimacion:hover {
+    transform: translateY(-15px);
+}
+
+.flexboxParaElMain .divdivVideosInstitucionales {
+    transition: all 0.5s;
+}
+
+.flexboxParaElMain .divVideosInstitucionales:hover {
+    transform: translateY(-15px);
+}
+
+.flexboxParaElMain .divArquigrafia {
+    transition: all 0.5s;
+}
+
+.flexboxParaElMain .divArquigrafia:hover {
+    transform: translateY(-15px);
+}
+
+
+
+
 
 .divEditorial {
     background-color: rgba(247, 171, 31, 0.993);
