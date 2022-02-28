@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>CBULGARELLI-DISEÑADORA GRAFICA</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
     <enlace rel="preconectar" href="https://fonts.googleapis.com">
         <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
@@ -37,43 +38,44 @@
      </header>
 
     <main>
-
+        
         <img class="trianguloRosa" src="./IMAGENES/main/trianguloRosa.gif" alt="trianguloRosa">
         <img class="trianguloAzul" src="./IMAGENES/main/trianguloAzul.gif" alt="trianguloAzul">
-        
-    <section class="sectionContacto">
+  
+        <section class="container mt-5">
+            <div class="rem">
+            <div class="col-sm-12 col-md-8 col-lg-6 p-4 mx auto"></div>
+            <h3 class=" mb-5 ab-4"><strong>CONTACTO</strong></h3>  
 
-        <h2 class="sectionContacto__titulo">CONTACTO</h2>
+        <form action="">
 
-    <form class="sectionContacto__items" action="" method="" enctype="">
+            <div class="mb-3">
+                <label for="NombreyApellido" class="form-label">Nombre y Apellido</label>
+                <input type="name" class="form-control" id="NombreyApellido" aria-describedby="nameHelp">
+                <div id="nameHelp" class="form-text">Identificacion</div>
+              </div>
 
-        <div class="sectionContacto__items--nombreycaja formularioGrid">
-        <label class="formularioGrid__texto" for="Apellido y Nombre">Apellido y Nombre:</label>
-       <input type="text" name="Apellido y Nombre" id="Apellido y Nombre" placeholder="JUAN PEREZ" />
-    </div>
-    
-    <div class="sectionContacto__items--nombreycaja formularioGrid">
-       <label  class="formularioGrid__texto" for="Asunto">Asunto:</label>
-       <input type="text" name="Asunto" id="Asunto" placeholder="PRESUPUESTO"/> 
-    </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
 
-    <div class="sectionContacto__items--nombreycaja formularioGrid">
-       <label class="formularioGrid__texto" for="E-mail">E-mail:</label>
-       <input type="email" name="E-mail" id="E-mail" placeholder="juanperez@correoelectronico.com" />
-    </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Dejá tu mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <div id="emailHelp" class="form-text">Comentarios</div>
+              </div>
 
-    <div class="sectionContacto__items--nombreycaja formularioGrid">
-       <label class="formularioGrid__texto" for="Mensaje">Mensaje:</label>
-       <input type="text" name="Mensaje" id="Mensaje" placeholder="Presupuesto para diseño de pagina web" />
-    </div>
+            <div class="d-flex justify-content-around">
+            <button type="submit" class="btn btn-primary p-2">Enviar</button>
+            <button type="reset" class="btn btn-primary">Limpiar</button>
+            </div>
+          </form>        
 
-    <div class="sectionContacto__items--botones" >
-    <button class="sectionContacto__buttons" type="submit">ENVIAR</button>
-    <button class="sectionContacto__buttons" type="reset">LIMPIAR</button>
-</div>
-    
-      </form> 
+        </div>
     </section>
+
 </main>
     <br/>
 

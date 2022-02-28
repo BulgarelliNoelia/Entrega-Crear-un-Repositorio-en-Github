@@ -375,7 +375,7 @@ h3 {
 
 /* CSS PARA CONTACTO */
 
-.sectionContacto {
+/* .sectionContacto {
     height: 400px;
     width: 400px;
     border-radius: 30px;
@@ -383,10 +383,12 @@ h3 {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 55px;
 }
 
 .sectionContacto__titulo {
-    padding: 50px 0 0 0;
+    font-size: 2rem;
+    padding: 25px 0 0 0;
     color: white;
 }
 
@@ -400,6 +402,7 @@ h3 {
     margin-top: 5px;
     margin-bottom: 5px;
     color: white;
+    
 }
 
 
@@ -409,6 +412,7 @@ h3 {
 
 .sectionContacto__buttons {
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .formularioGrid {
@@ -419,14 +423,14 @@ h3 {
 .formularioGrid__texto {
  text-align: left;
 }
-
+ */
 
 .trianguloRosa {
     height: 70px;
     width: 70px;
    display: flex;
    position: absolute;
-   left: 250px;
+   left: 220px;
    top: 400px;
    /* transform: rotate(90deg); */
    animation: movimientoTrianguloRosa 1s infinite alternate;
@@ -551,7 +555,7 @@ justify-content: space-evenly;
     }
 
     .trianguloRosa {
-        left: 150px;
+        left: 20px;
     }
 
     .trianguloAzul {
@@ -573,11 +577,11 @@ justify-content: space-evenly;
             }
         
     .trianguloRosa {
-        left: 80px;
+        display: none;
     }
 
     .trianguloAzul {
-        left:700px;
+        display: none;
     }
 
 .container {
@@ -637,11 +641,11 @@ ul.slider {
     }
 
  .trianguloRosa {
-        left: 20px;
+        display: none;
     }
 
 .trianguloAzul {
-        left: 560px;
+        display: none;
     }
 
 }
