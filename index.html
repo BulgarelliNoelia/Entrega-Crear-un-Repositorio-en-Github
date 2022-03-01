@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>CBULGARELLI-DISEÑADORA GRAFICA</title>
     <link rel="shortcut icon" href="./IMAGENES/Sin título-5.png"/>
-     
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous""></script>
     <link rel="stylesheet" href="./style.css">
     <enlace rel="preconectar" href="https://fonts.googleapis.com">
         <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
@@ -31,13 +32,15 @@
                  <li><a class="transicionesRosa" href="./contacto.html">CONTACTO</a></li>
              </ul>
          </nav>
-         
+
+
      </span>
      </header>
 
 <main>
 
-    <div class="container">
+<!-- CARRUSEL SIN BOOTSTRAP, SOLO CON CSS -->
+<!-- <div class="container">
         <ul class="slider">
             <li id="slide1"><img src="./IMAGENES/main/1.gif" alt="foto comunity"></li>
             <li id="slide2"><img src="./IMAGENES/main/2.gif" alt="diseño editorial"></li>
@@ -48,11 +51,46 @@
             <li class="colorParaEnumerar1"> <a href="#slide1">1</a></li>
             <li class="colorParaEnumerar2"> <a href="#slide2">2</a></li>
             <li class="colorParaEnumerar3"> <a href="#slide3">3</a></li>
-        </ul>
-    
-    
-    </div>
+        </ul>      
+    </div> -->
 
+<div>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./IMAGENES/main/1.gif" class="d-block w-100" alt="Community Manager">
+            <div class="carousel-caption d-none d-md-block">
+                <p class="tipografia">Community Manager</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./IMAGENES/main/2.gif" class="d-block w-100" alt="Diseño Editorial">
+            <div class="carousel-caption d-none d-md-block">
+                <p class="tipografia">Diseño Editorial</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./IMAGENES/main/3.gif" class="d-block w-100" alt="packaging">
+            <div class="carousel-caption d-none d-md-block">
+                <p class="tipografia">Packaging</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
 </main>
 
 
