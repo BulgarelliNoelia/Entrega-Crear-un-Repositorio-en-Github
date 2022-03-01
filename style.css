@@ -317,10 +317,6 @@ section ol li:hover {
     animation: temblor 0.5s 1;
 }
 
-
-
-
-
 /* CSS PARA LA DESCRIPCION PORTFOLIO*/
 
 h2 {
@@ -372,10 +368,6 @@ h3 {
     transform: translateY(-15px);
 }
 
-
-
-
-
 .divEditorial {
     background-color: rgba(247, 171, 31, 0.993);
     border-radius: 10px;
@@ -423,64 +415,14 @@ h3 {
 
 /* CSS PARA CONTACTO */
 
-/* .sectionContacto {
-    height: 400px;
-    width: 400px;
-    border-radius: 30px;
-    background-color: green;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 55px;
-}
-
-.sectionContacto__titulo {
-    font-size: 2rem;
-    padding: 25px 0 0 0;
-    color: white;
-}
-
-.sectionContacto__items {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-}
-
-.sectionContacto__items--nombreycaja{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    color: white;
-    
-}
-
-
-.sectionContacto__items--botones {
-    padding: 30px;
-}
-
-.sectionContacto__buttons {
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-.formularioGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.formularioGrid__texto {
- text-align: left;
-}
- */
 
 .trianguloRosa {
     height: 70px;
     width: 70px;
    display: flex;
    position: absolute;
-   left: 220px;
+   left: 20px;
    top: 400px;
-   /* transform: rotate(90deg); */
    animation: movimientoTrianguloRosa 1s infinite alternate;
 }
 
@@ -489,9 +431,8 @@ h3 {
     width: 70px;
    display: flex;
    position: absolute;
-   left: 1050px;
+   left: 1250px;
    top: 400px;
-  /*  transform: rotate(-90deg); */
    animation: movimientoTrianguloRosa 1s infinite alternate;
     
 }
