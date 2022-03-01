@@ -179,6 +179,7 @@ ul.slider li:target{
     margin-bottom: 75px;
     text-align: center;
     padding: 25px;
+    font-size: 32px;
 }
 
 .grid{
@@ -196,12 +197,18 @@ ul.slider li:target{
     font-size: 20px;
 }
 
+
 .grid__parrafoa {
     grid-area: parrafoa;
     place-self: center;
     text-align: center;
     border: 5px solid rgba(247, 171, 31, 0.993);
     padding: 20px;
+    transition: font-size 0.5s;
+}
+
+.grid__parrafoa:hover {
+    font-size: 25px;
 }
 
 .grid__fotoa {
@@ -221,6 +228,11 @@ ul.slider li:target{
     text-align: center;
     border: 5px solid rgb(58, 194, 24) ;
     padding: 20px;
+    transition: font-size 0.5s;
+}
+
+.grid__parrafob:hover {
+    font-size: 25px;
 }
 
 .grid__fotoc {
@@ -234,8 +246,12 @@ ul.slider li:target{
     text-align: center;
     border: 5px solid rgba(255, 105, 180, 0.932) ;
     padding: 20px;
+    transition: font-size 0.5s;
 }
 
+.grid__parrafoc:hover {
+    font-size: 25px;
+}
 
 
 /* CSS PARA FORMACION */
@@ -281,6 +297,28 @@ section ol li {
     text-align: center;
     margin-left: 650px;
 }
+
+@keyframes temblor {
+    0% {transform: translate(0px,0px);}
+    10% {transform: translate(20px,0px);}
+    20% {transform: translate(0px,0px);}
+    30% {transform: translate(20px,0px);}
+    40% {transform: translate(0px,0px);}
+    50% {transform: translate(20px,0px);}
+    60% {transform: translate(0px,0px);}
+    70% {transform: translate(20px,0px);}
+    80% {transform: translate(0px,0px);}
+    90% {transform: translate(20px,0px);}
+    100% {transform: translate(0px,0px);}
+
+}
+
+section ol li:hover {
+    animation: temblor 0.5s 1;
+}
+
+
+
 
 
 /* CSS PARA LA DESCRIPCION PORTFOLIO*/
