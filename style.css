@@ -182,6 +182,19 @@ ul.slider li:target{
     font-size: 32px;
 }
 
+.tituloSobreMi::before{
+    content: "\276D";
+    padding: 5px;
+    color: rgb(58, 194, 24);
+}
+
+.tituloSobreMi::after {
+    content: "\276C";
+    padding: 5px;
+    color: rgba(0, 183, 255, 0.795);
+}
+
+
 .grid{
     display: grid;
     grid-template-areas: "parrafoa fotoa"
@@ -264,6 +277,7 @@ section ol li {
     padding: 15px;
     font-weight: bold;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .sectionColorAmarillo {
@@ -298,7 +312,7 @@ section ol li {
     margin-left: 650px;
 }
 
-@keyframes temblor {
+@keyframes temblorHorizontal {
     0% {transform: translate(0px,0px);}
     10% {transform: translate(20px,0px);}
     20% {transform: translate(0px,0px);}
@@ -313,9 +327,30 @@ section ol li {
 
 }
 
-section ol li:hover {
-    animation: temblor 0.5s 1;
+@keyframes temblorVertical {
+    0% {transform: translate(0px,20px);}
+    10% {transform: translate(0px,-20px);}
+    20% {transform: translate(0px,20px);}
+    30% {transform: translate(0px,-20px);}
+    40% {transform: translate(0px,20px);}
+    50% {transform: translate(0px,-20px);}
+    60% {transform: translate(0px,20px);}
+    70% {transform: translate(0px,-20px);}
+    80% {transform: translate(0px,20px);}
+    90% {transform: translate(0px,-20px);}
+    100% {transform: translate(0px,20px);}
+
 }
+
+section ol li:hover:nth-child(even) {
+    animation: temblorHorizontal 0.5s 1;
+}
+
+section ol li:hover:nth-child(odd) {
+    animation: temblorVertical 0.5s 1;
+}
+
+
 
 /* CSS PARA LA DESCRIPCION PORTFOLIO*/
 
@@ -323,11 +358,25 @@ h2 {
     text-align: center;
     margin-top: 100px;
     margin-bottom: 100px;
+    font-weight: bold;
+}
+
+h2::before{
+    content: "\276D";
+    padding: 5px;
+    color: rgb(58, 194, 24);
+}
+
+h2::after {
+    content: "\276C";
+    padding: 5px;
+    color: rgba(0, 183, 255, 0.795);
 }
 
 h3 {
     margin-bottom: 10px;
     text-align: center;
+    font-weight: bold 5px;
 }
 
 
@@ -372,6 +421,7 @@ h3 {
     background-color: rgba(247, 171, 31, 0.993);
     border-radius: 10px;
     text-align: center;
+    font-weight: bold;
     padding: 10px;
     width: 300px;
     font-size: 15px;
@@ -390,6 +440,7 @@ h3 {
     width: 300px;
     font-size: 15px;
     line-height: 1.5;
+    font-weight: bold;
 }
 
 .divVideosInstitucionales {
@@ -400,6 +451,7 @@ h3 {
     width: 300px;
     font-size: 15px;
     line-height: 1.5;
+    font-weight: bold;
 }
 
 .divArquigrafia {
@@ -410,11 +462,23 @@ h3 {
     width: 300px;
     font-size: 15px;
     line-height: 1.5;
+    font-weight: bold;
 }
 
 
 /* CSS PARA CONTACTO */
 
+h3::before {
+    content: "\276D";
+    padding: 5px;
+    color: rgb(58, 194, 24);
+}
+
+h3::after {
+    content: "\276C";
+    padding: 5px;
+    color: rgba(0, 183, 255, 0.795);
+}
 
 .trianguloRosa {
     height: 70px;
