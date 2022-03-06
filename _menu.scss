@@ -1,0 +1,61 @@
+header {
+    box-shadow: 0 10px 25px black ;
+}
+
+.parallax{
+    background-image: url("./IMAGENES/HEADER/banner-caro-2.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+
+    ul { 
+        padding: 100px;
+        text-align: right;
+        text-shadow: 0 5px 5px black;
+
+    }   
+}
+
+.logoCaro {
+    display: none;
+}
+
+
+span nav ul li{
+    display: inline-block;
+    margin: 0 0 0 0;
+
+    a {
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 15px 5px;
+        color: white;  
+    }
+}
+
+
+.transicionesRosa {
+    transition: all 0.5s;
+
+    &:hover {
+    font-size: 18px;
+    background-color: $colorRosa;
+    border-radius: 45px;
+    color: white;
+    }
+}
+
+
+.transicionesVerde {
+    transition: all 0.5s;
+
+    &:hover{
+    font-size: 18px;
+    background-color: $colorVerde;
+    border-radius: 45px;
+    color: white;
+    }
+}
+
