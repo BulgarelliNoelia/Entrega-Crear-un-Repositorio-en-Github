@@ -2,6 +2,35 @@ header {
     box-shadow: 0 10px 25px black ;
 }
 
+.menuResponsive{
+    display: none;
+}
+
+
+#menuHamburguesa {
+    border-radius: 100px;
+    background-color: rgba(255, 105, 180, 0.932);
+    margin-top: 75px;
+    margin-left: 80%;
+}
+
+
+.parallaxMenuHamburgesa{
+    background-image: url("./IMAGENES/HEADER/BANNER\ CARO\ -\ RESPONSIVE.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 200px;
+    
+}
+
+.fondoListaDesplegable {
+    background-color: rgb(58, 194, 24);
+    height: 100%;
+    border-color: rgb(58, 194, 24);
+}
+
 .parallax{
     background-image: url("./IMAGENES/HEADER/banner-caro-2.gif");
     background-repeat: no-repeat;
