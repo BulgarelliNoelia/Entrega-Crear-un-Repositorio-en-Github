@@ -44,3 +44,37 @@
     text-align: right;
 }  
 
+
+@media (max-width:1024px) {
+
+    .flexboxparafooter__primeraseccion {
+        display: none;
+    }
+    .flexboxParaElMain {
+        flex-direction: column;
+        place-items: center;
+    }
+}
+
+    @media (max-width:850px) {
+
+
+        .footer {
+            background-color: rgba(0, 183, 255, 0.795);
+            margin-top: 150px;
+                }
+            }
+
+                @media (max-width:480px) {
+
+                    .footer {
+                        width: auto;
+                    }
+                
+                
+                    .flexboxparafooter__segundaseccion {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        place-items: center;
+                    } 
+                }

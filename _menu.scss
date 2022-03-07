@@ -88,3 +88,13 @@ span nav ul li{
     }
 }
 
+@media (max-width:768px) {
+
+    .parallax {
+        display: none;
+    }
+
+    .menuResponsive {
+        display: block;
+    }
+}

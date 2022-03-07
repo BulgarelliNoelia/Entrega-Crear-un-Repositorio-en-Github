@@ -77,4 +77,75 @@ section ol li {
 
 }
 
+@media (max-width:1185px) {
+
+    .sectionColorVerde {
+        margin-left:150px;
+        width: 70%;
+    }
+
+    .sectionColorAmarillo {
+        width:70%;
+        margin-left:150px;
+    }
+
+    .sectionContactoRosa{
+        width:70%;
+        margin-left:150px;
+    }
+
+    .sectionContactoAzul {
+        width:70%;
+        margin-left:150px;
+
+    }
+}
+
+@media (max-width:768px) {
+
+.sectionColorVerde {
+    margin: 10px 90px ;
+    width: 70%;
+}
+
+.sectionColorAmarillo {
+    margin: 10px 90px ;
+    width: 70%;
+}
+
+.sectionContactoRosa{
+    margin: 10px 90px ;
+    width: 70%;
+}
+
+.sectionContactoAzul {
+    margin: 10px 90px ;
+    width: 70%;
+
+}
+}
+
+@media (max-width:480px) {
+
+    .sectionColorVerde {
+        margin: 10px 45px ;
+        width: 70%;
+    }
+
+    .sectionColorAmarillo {
+        margin: 10px 45px ;
+        width: 70%;
+    }
+
+    .sectionContactoRosa{
+        margin: 10px 45px ;
+        width: 70%;
+    }
+
+    .sectionContactoAzul {
+        margin: 10px 45px ;
+        width: 70%;
+
+    }
+}
 

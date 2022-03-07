@@ -92,3 +92,9 @@
 
 }
 
+@media (max-width:850px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -88,6 +88,15 @@ span nav ul li a {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .parallax {
+    display: none;
+  }
+
+  .menuResponsive {
+    display: block;
+  }
+}
 /* CSS PARA EL MAIN DEL INDEX */
 /* ESTILOS PARA EL CARRUSEL SIN BOOTSTRAP, SOLO CSS */
 /* .container {
@@ -176,6 +185,24 @@ ul.slider li:target{
   font-size: 2rem;
 }
 
+/* @media (max-width:850px) {
+
+
+    .container {
+        width: 96%;
+        max-width: 960px;
+    }
+
+    ul.slider {
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu {
+        margin-top: 300px;
+    }
+
+    } */
 .tituloSobreMi {
   margin-top: 75px;
   margin-bottom: 75px;
@@ -253,6 +280,12 @@ ul.slider li:target{
   font-size: 25px;
 }
 
+@media (max-width: 850px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
 section ol li {
   list-style-type: none;
   border: 7px;
@@ -371,6 +404,69 @@ section ol li:hover:nth-child(odd) {
     transform: translate(0px, 20px);
   }
 }
+@media (max-width: 1185px) {
+  .sectionColorVerde {
+    margin-left: 150px;
+    width: 70%;
+  }
+
+  .sectionColorAmarillo {
+    width: 70%;
+    margin-left: 150px;
+  }
+
+  .sectionContactoRosa {
+    width: 70%;
+    margin-left: 150px;
+  }
+
+  .sectionContactoAzul {
+    width: 70%;
+    margin-left: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .sectionColorVerde {
+    margin: 10px 90px;
+    width: 70%;
+  }
+
+  .sectionColorAmarillo {
+    margin: 10px 90px;
+    width: 70%;
+  }
+
+  .sectionContactoRosa {
+    margin: 10px 90px;
+    width: 70%;
+  }
+
+  .sectionContactoAzul {
+    margin: 10px 90px;
+    width: 70%;
+  }
+}
+@media (max-width: 480px) {
+  .sectionColorVerde {
+    margin: 10px 45px;
+    width: 70%;
+  }
+
+  .sectionColorAmarillo {
+    margin: 10px 45px;
+    width: 70%;
+  }
+
+  .sectionContactoRosa {
+    margin: 10px 45px;
+    width: 70%;
+  }
+
+  .sectionContactoAzul {
+    margin: 10px 45px;
+    width: 70%;
+  }
+}
 /* CSS PARA LA DESCRIPCION PORTFOLIO*/
 h2 {
   text-align: center;
@@ -459,6 +555,19 @@ h3 {
   transform: translateY(-15px);
 }
 
+@media (max-width: 1024px) {
+  .divEditorial {
+    margin-bottom: 15PX;
+  }
+
+  .divAnimacion {
+    margin-bottom: 15PX;
+  }
+
+  .divVideosInstitucionales {
+    margin-bottom: 15PX;
+  }
+}
 /* CSS PARA CONTACTO */
 h2::before {
   content: "❭";
@@ -499,6 +608,47 @@ h2::after {
     top: 600px;
   }
 }
+@media (max-width: 1024px) {
+  .trianguloRosa {
+    left: 20px;
+  }
+
+  .trianguloAzul {
+    left: 800px;
+  }
+}
+@media (max-width: 850px) {
+  .trianguloRosa {
+    display: none;
+  }
+
+  .trianguloAzul {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .trianguloRosa {
+    display: none;
+  }
+
+  .trianguloAzul {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .trianguloAzul {
+    left: 460px;
+  }
+}
+@media (max-width: 480px) {
+  .trianguloRosa {
+    display: none;
+  }
+
+  .trianguloAzul {
+    display: none;
+  }
+}
 /* CLASES PARA EL FOOTER */
 .footer {
   background-color: rgba(0, 183, 255, 0.795);
@@ -536,6 +686,34 @@ h2::after {
 
 .flechita {
   text-align: right;
+}
+
+@media (max-width: 1024px) {
+  .flexboxparafooter__primeraseccion {
+    display: none;
+  }
+
+  .flexboxParaElMain {
+    flex-direction: column;
+    place-items: center;
+  }
+}
+@media (max-width: 850px) {
+  .footer {
+    background-color: rgba(0, 183, 255, 0.795);
+    margin-top: 150px;
+  }
+}
+@media (max-width: 480px) {
+  .footer {
+    width: auto;
+  }
+
+  .flexboxparafooter__segundaseccion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
