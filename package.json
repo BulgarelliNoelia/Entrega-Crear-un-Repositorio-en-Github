@@ -1,0 +1,19 @@
+{
+  "name": "paginacaro",
+  "version": "1.0.0",
+  "description": "SE DESARROLLARAN CONCEPTOS RELACIONADOS CON SU FORMACION, TRABAJOS Y CAPACIDADES PARA EL ARMADO Y DESARROLLO DE TAREAS RELACIONADAS CON EL DISEÑO GRAFICO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BulgarelliNoelia/Entrega-Crear-un-Repositorio-en-Github.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BulgarelliNoelia/Entrega-Crear-un-Repositorio-en-Github/issues"
+  },
+  "homepage": "https://github.com/BulgarelliNoelia/Entrega-Crear-un-Repositorio-en-Github#readme"
+}

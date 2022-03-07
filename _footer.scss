@@ -1,0 +1,80 @@
+
+/* CLASES PARA EL FOOTER */
+
+.footer{
+    background-color: $colorAzul;
+    margin-top: 35px;
+}
+
+.flexboxparafooter{
+    display: flex;
+
+    &__primeraseccion {
+        justify-content: space-evenly;
+
+        &--centrar {
+            text-align: center;
+            margin-top: 15px;
+        }
+    }
+
+    &__segundaseccion{
+        justify-content: space-evenly;
+        margin-top: 15px;
+    }
+
+}
+
+
+.tamanoImagen{
+    width: 50px;
+    height: 50px;
+}
+
+.tamanoMapa{
+    width: 60px;
+    height: 60px;
+}
+
+.tamanoTexto {
+    font-size: 13px;
+}
+
+.flechita{
+    text-align: right;
+}  
+
+
+@media (max-width:1024px) {
+
+    .flexboxparafooter__primeraseccion {
+        display: none;
+    }
+    .flexboxParaElMain {
+        flex-direction: column;
+        place-items: center;
+    }
+}
+
+    @media (max-width:850px) {
+
+
+        .footer {
+            background-color: rgba(0, 183, 255, 0.795);
+            margin-top: 150px;
+                }
+            }
+
+                @media (max-width:480px) {
+
+                    .footer {
+                        width: auto;
+                    }
+                
+                
+                    .flexboxparafooter__segundaseccion {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        place-items: center;
+                    } 
+                }

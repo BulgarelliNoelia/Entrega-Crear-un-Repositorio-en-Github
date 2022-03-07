@@ -1,0 +1,108 @@
+/* CSS PARA CONTACTO */
+
+h2 {
+    &::before {
+        content: "\276D";
+        padding: 5px;
+        color: $colorVerde;
+    }
+
+    &::after {
+        content: "\276C";
+        padding: 5px;
+        color: $colorAzul;
+    }
+}
+
+
+
+.trianguloRosa {
+    height: 70px;
+    width: 70px;
+   display: flex;
+   position: absolute;
+   left: 20px;
+   top: 400px;
+   animation: movimientoTrianguloRosa 1s infinite alternate;
+}
+
+.trianguloAzul {
+    height: 70px;
+    width: 70px;
+   display: flex;
+   position: absolute;
+   left: 1250px;
+   top: 400px;
+   animation: movimientoTrianguloRosa 1s infinite alternate;
+    
+}
+
+
+
+@keyframes movimientoTrianguloRosa {
+    from {
+        top:400px;
+    }
+    
+    to {
+        top:600px;
+    }
+}
+
+@media (max-width:1024px) {
+
+    .trianguloRosa {
+        left: 20px;
+    }
+
+    .trianguloAzul {
+        left:800px;
+    }
+}
+
+@media (max-width:850px) {
+
+        
+    .trianguloRosa {
+        display: none;
+    }
+
+    .trianguloAzul {
+        display: none;
+    }
+}
+
+
+    @media (max-width:768px) {
+
+        .trianguloRosa {
+               display: none;
+           }
+       
+       .trianguloAzul {
+               display: none;
+           }
+       
+       }
+
+       @media (max-width:650px){
+
+        .trianguloAzul {
+            left: 460px;
+        }
+        }
+
+        
+@media (max-width:480px) {
+
+
+    .trianguloRosa {
+        display: none;
+    }
+
+
+    .trianguloAzul {
+        display: none;
+    }
+
+}
