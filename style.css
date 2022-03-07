@@ -16,21 +16,52 @@ header {
     box-shadow: 0 10px 25px black ;
 }
 
+.menuResponsive{
+    display: none;
+}
+
+
+#menuHamburguesa {
+    border-radius: 100px;
+    background-color: rgba(255, 105, 180, 0.932);
+    margin-top: 75px;
+    margin-left: 80%;
+}
+
+
+.parallaxMenuHamburgesa{
+    background-image: url("./IMAGENES/HEADER/BANNER\ CARO\ -\ RESPONSIVE.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 200px;
+    
+}
+
+.fondoListaDesplegable {
+    background-color: rgb(58, 194, 24);
+    height: 100%;
+    border-color: rgb(58, 194, 24);
+}
+
+
+
 .parallax{
     background-image: url("./IMAGENES/HEADER/banner-caro-2.gif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
-    
-}
+   
+} 
 
-.logoCaro {
+ .logoCaro {
     display: none;
 }
 
 
-.parallax ul {
+ .parallax ul {
     padding: 100px;
     text-align: right;
     text-shadow: 0 5px 5px black;
@@ -69,7 +100,7 @@ span nav ul li a {
     background-color: rgb(58, 194, 24);
     border-radius: 45px;
     color: white;
-}
+} 
 
 
 /* CSS PARA EL MAIN DEL INDEX */
@@ -585,6 +616,11 @@ justify-content: space-evenly;
 }
 
 
+@media (max-width:1425px) {
+    
+    
+}
+
 @media (max-width:1024px) {
 
     .flexboxparafooter__primeraseccion {
@@ -658,7 +694,11 @@ ul.slider {
         display: none;
     }
 
-.logoCaro {
+    .menuResponsive {
+        display: block;
+    }
+
+/* .logoCaro {
     background-color: chartreuse;
     display: flex;
     width: 100%;
@@ -668,7 +708,7 @@ ul.slider {
     span nav ul li {
         display: none;
         max-width: 480px;
-    }
+    } */
 
     .sectionColorVerde {
         margin: 10px 90px ;
