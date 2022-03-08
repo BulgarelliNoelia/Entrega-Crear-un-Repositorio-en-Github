@@ -9,7 +9,7 @@ header {
 
 #menuHamburguesa {
     border-radius: 100px;
-    background-color: rgba(255, 105, 180, 0.932);
+    background-color: $colorRosa;
     margin-top: 75px;
     margin-left: 80%;
 }
@@ -26,9 +26,9 @@ header {
 }
 
 .fondoListaDesplegable {
-    background-color: rgb(58, 194, 24);
+    background-color: $colorVerde;
     height: 100%;
-    border-color: rgb(58, 194, 24);
+    border-color: $colorVerde;
 }
 
 .parallax{
@@ -88,7 +88,7 @@ span nav ul li{
     }
 }
 
-@media (max-width:768px) {
+  @media (max-width:768px) {
 
     .parallax {
         display: none;
@@ -97,4 +97,5 @@ span nav ul li{
     .menuResponsive {
         display: block;
     }
-}
+} 
+ 

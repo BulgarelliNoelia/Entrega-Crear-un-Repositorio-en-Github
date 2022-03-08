@@ -13,60 +13,52 @@ header {
   box-shadow: 0 10px 25px black;
 }
 
-.menuResponsive{
-    display: none;
+.menuResponsive {
+  display: none;
 }
-
 
 #menuHamburguesa {
-    border-radius: 100px;
-    background-color: rgba(255, 105, 180, 0.932);
-    margin-top: 75px;
-    margin-left: 80%;
+  border-radius: 100px;
+  background-color: rgba(255, 105, 180, 0.932);
+  margin-top: 75px;
+  margin-left: 80%;
 }
 
-
-.parallaxMenuHamburgesa{
-    background-image: url("./IMAGENES/HEADER/BANNER\ CARO\ -\ RESPONSIVE.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: scroll;
-    height: 200px;
-    
+.parallaxMenuHamburgesa {
+  background-image: url("./IMAGENES/HEADER/BANNER CARO - RESPONSIVE.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 200px;
 }
 
 .fondoListaDesplegable {
-    background-color: rgb(58, 194, 24);
-    height: 100%;
-    border-color: rgb(58, 194, 24);
+  background-color: #3ac218;
+  height: 100%;
+  border-color: #3ac218;
 }
 
-
-
-.parallax{
-    background-image: url("./IMAGENES/HEADER/banner-caro-2.gif");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: scroll;
-   
-} 
-
- .logoCaro {
-    display: none;
+.parallax {
+  background-image: url("./IMAGENES/HEADER/banner-caro-2.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.parallax ul {
+  padding: 100px;
+  text-align: right;
+  text-shadow: 0 5px 5px black;
 }
 
+.logoCaro {
+  display: none;
+}
 
- .parallax ul {
-    padding: 100px;
-    text-align: right;
-    text-shadow: 0 5px 5px black;
-    }
-
-span nav ul li{
-    display: inline-block;
-    margin: 0 0 0 0;
+span nav ul li {
+  display: inline-block;
+  margin: 0 0 0 0;
 }
 span nav ul li a {
   text-decoration: none;
@@ -90,11 +82,11 @@ span nav ul li a {
   transition: all 0.5s;
 }
 .transicionesVerde:hover {
-    font-size: 18px;
-    background-color: rgb(58, 194, 24);
-    border-radius: 45px;
-    color: white;
-} 
+  font-size: 18px;
+  background-color: #3ac218;
+  border-radius: 45px;
+  color: white;
+}
 
 @media (max-width: 768px) {
   .parallax {
@@ -700,182 +692,22 @@ h2::after {
   .flexboxparafooter__primeraseccion {
     display: none;
   }
+
+  .flexboxParaElMain {
+    flex-direction: column;
+    place-items: center;
+  }
 }
-@media (max-width:1425px) {
-    
-    
+@media (max-width: 850px) {
+  .footer {
+    background-color: rgba(0, 183, 255, 0.795);
+    margin-top: 150px;
+  }
 }
-
-@media (max-width:1024px) {
-
-    .flexboxparafooter__primeraseccion {
-        display: none;
-    }
-    .flexboxParaElMain {
-        flex-direction: column;
-        place-items: center;
-    }
-
-    .divEditorial {
-        margin-bottom: 15PX;
-    }
-
-    .divAnimacion {
-        margin-bottom: 15PX; 
-    }
-
-    .divVideosInstitucionales {
-        margin-bottom: 15PX;   
-    }
-
-    .trianguloRosa {
-        left: 20px;
-    }
-
-    .trianguloAzul {
-        left:800px;
-    }
-}
-
-@media (max-width:850px) {
-    .grid {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer {
-        background-color: rgba(0, 183, 255, 0.795);
-        margin-top: 150px;
-            }
-        
-    .trianguloRosa {
-        display: none;
-    }
-
-    .trianguloAzul {
-        display: none;
-    }
-
-.container {
-    width: 96%;
-    max-width: 960px;
-}
-
-ul.slider {
-    width: 100%;
-    height: 100%;
-}
-
-.menu {
-    margin-top: 300px;
-}
-
-}
-
-
-@media (max-width:768px) {
-
-    .parallax {
-        display: none;
-    }
-
-    .menuResponsive {
-        display: block;
-    }
-
-/* .logoCaro {
-    background-color: chartreuse;
-    display: flex;
-    width: 100%;
-    
-}
-
-    span nav ul li {
-        display: none;
-        max-width: 480px;
-    } */
-
-    .sectionColorVerde {
-        margin: 10px 90px ;
-        width: 70%;
-    }
-
-    .sectionColorAmarillo {
-        margin: 10px 90px ;
-        width: 70%;
-    }
-
-    .sectionContactoRosa{
-        margin: 10px 90px ;
-        width: 70%;
-    }
-
-    .sectionContactoAzul {
-        margin: 10px 90px ;
-        width: 70%;
-
-    }
-
- .trianguloRosa {
-        display: none;
-    }
-
-.trianguloAzul {
-        display: none;
-    }
-
-}
-
-
-@media (max-width:650px){
-
-.trianguloAzul {
-    left: 460px;
-}
-}
-
-@media (max-width:480px) {
-
-    .footer {
-        width: auto;
-    }
-
-
-    .flexboxparafooter__segundaseccion {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        place-items: center;
-    } 
-
-    .sectionColorVerde {
-        margin: 10px 45px ;
-        width: 70%;
-    }
-
-    .sectionColorAmarillo {
-        margin: 10px 45px ;
-        width: 70%;
-    }
-
-    .sectionContactoRosa{
-        margin: 10px 45px ;
-        width: 70%;
-    }
-
-    .sectionContactoAzul {
-        margin: 10px 45px ;
-        width: 70%;
-
-    }
-
-    .trianguloRosa {
-        display: none;
-    }
-
-
-    .trianguloAzul {
-        display: none;
-    }
+@media (max-width: 480px) {
+  .footer {
+    width: auto;
+  }
 
   .flexboxparafooter__segundaseccion {
     display: grid;
