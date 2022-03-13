@@ -49,6 +49,17 @@ h2 {
     }
 }
 
+$mapColorBotones:(izquierda:$colorRosa,derecha:$colorVerde);
+
+@each $fondo, $color in $mapColorBotones {
+    .#{$fondo} {
+        background-color:$color;
+        border-color: $color;
+    }
+} 
+
+
+
 @media (max-width:1024px) {
 
     .trianguloRosa {

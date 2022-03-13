@@ -6,6 +6,10 @@
     margin-top: 35px;
 }
 
+.footerParaIndex {
+    margin: 0;
+}
+
 .flexboxparafooter{
     display: flex;
 
@@ -45,6 +49,58 @@
 }  
 
 
+    /* PRUEBA DE JERARQUIZAR ARCHIVOS */
+
+    .footerConEsquematizacion {
+        display: flex;
+        justify-content: space-around;
+    
+    }
+    
+        .esquematizarArchivosSeccionUno {
+            
+            display: flex;
+            flex-direction: column;
+    
+            strong {
+                font-size: 20px;
+            }
+    
+            a {
+                text-decoration: none;
+                margin-left: 15px;
+                color: black;
+                font-style: italic;
+                font-size: 15px;
+                padding: 5px;
+            }
+        }
+    
+        .esquematizarArchivosSeccionDos {
+            display: flex;
+            flex-direction: column;
+    
+            strong {
+                font-size: 20px;
+            }
+    
+            div {
+                display: flex;
+                flex-direction: column;
+    
+                a {
+                margin-left: 15px;
+                text-decoration: none;
+                color: black;
+                font-style: italic;
+                font-size: 15px;
+                padding: 5px;
+                }
+            }
+            
+        }
+
+
  @media (max-width:1024px) {
 
     .flexboxparafooter__primeraseccion {
@@ -65,16 +121,21 @@
                 }
             }
 
-                @media (max-width:480px) {
+@media (max-width:480px) {
 
-                    .footer {
-                        width: auto;
-                    }
-                
-                
-                    .flexboxparafooter__segundaseccion {
-                        display: grid;
-                        grid-template-columns: repeat(2, 1fr);
-                        place-items: center;
-                    } 
-                }  
+    .footer {
+        width: auto;
+    }
+
+
+    .flexboxparafooter__segundaseccion {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    } 
+
+    .esquematizarArchivosSeccionUno {
+        display: none;
+    }    
+
+}  

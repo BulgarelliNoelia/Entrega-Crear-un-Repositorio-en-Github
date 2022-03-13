@@ -15,24 +15,49 @@ section ol li {
     }
 }
 
+$mapColores:(primeroyquinto:$colorAmarillo,segundoysexto:$colorVerde,terceroyseptimo:$colorAzul,cuartoyoctavo:$colorRosa);
+
+@each $bordes, $color in $mapColores{
+    .#{$bordes} {
+        border-color: $color;
+    }
+}
+
+
+
 .sectionColorAmarillo {
-    border-color: $colorAmarillo;
+    /* border-color: $colorAmarillo; */
     margin-bottom: 15px;
-    width: 600px;
+    /* width: 600px;
     text-align: center;
-    margin-left: 60px;
+    margin-left: 60px; */
+}
+
+.agregandoExtendSectionColorAmarillo {
+    @extend .sectionColorAmarillo;
+        width: 600px;
+        text-align: center;
+        margin-left: 60px;
 }
 
 .sectionColorVerde {
-    border-color: $colorVerde;
+    /* border-color: $colorVerde; */
     margin-bottom: 15px;
+    /* width: 600px;
+    text-align: center;
+    margin-left: 650px; */
+}
+
+.agregandoExtendSectionColorVerde {
+    @extend .sectionColorVerde;
     width: 600px;
     text-align: center;
     margin-left: 650px;
+
 }
 
 .sectionContactoAzul {
-    border-color: $colorAzul;
+    /* border-color: $colorAzul; */
     margin-bottom: 15px;
     width: 600px;
     text-align: center;
@@ -40,7 +65,7 @@ section ol li {
 }
 
 .sectionContactoRosa {
-    border-color: $colorRosa;
+    /* border-color: $colorRosa; */
     margin-bottom: 15px;
     width: 600px;
     text-align: center;
