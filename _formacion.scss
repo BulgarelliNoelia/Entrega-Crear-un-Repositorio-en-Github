@@ -26,11 +26,7 @@ $mapColores:(primeroyquinto:$colorAmarillo,segundoysexto:$colorVerde,terceroysep
 
 
 .sectionColorAmarillo {
-    /* border-color: $colorAmarillo; */
     margin-bottom: 15px;
-    /* width: 600px;
-    text-align: center;
-    margin-left: 60px; */
 }
 
 .agregandoExtendSectionColorAmarillo {
@@ -40,12 +36,8 @@ $mapColores:(primeroyquinto:$colorAmarillo,segundoysexto:$colorVerde,terceroysep
         margin-left: 60px;
 }
 
-.sectionColorVerde {
-    /* border-color: $colorVerde; */
+.sectionColorVerde { 
     margin-bottom: 15px;
-    /* width: 600px;
-    text-align: center;
-    margin-left: 650px; */
 }
 
 .agregandoExtendSectionColorVerde {
@@ -57,7 +49,6 @@ $mapColores:(primeroyquinto:$colorAmarillo,segundoysexto:$colorVerde,terceroysep
 }
 
 .sectionContactoAzul {
-    /* border-color: $colorAzul; */
     margin-bottom: 15px;
     width: 600px;
     text-align: center;
@@ -65,7 +56,6 @@ $mapColores:(primeroyquinto:$colorAmarillo,segundoysexto:$colorVerde,terceroysep
 }
 
 .sectionContactoRosa {
-    /* border-color: $colorRosa; */
     margin-bottom: 15px;
     width: 600px;
     text-align: center;
