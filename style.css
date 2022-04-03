@@ -18,10 +18,11 @@ header {
 }
 
 #menuHamburguesa {
-  border-radius: 100px;
-  background-color: rgba(255, 105, 180, 0.932);
-  margin-top: 75px;
+  margin-top: 0px;
   margin-left: 80%;
+  background-color: rgba(218, 215, 42, 0.918);
+  border-color: rgba(218, 215, 42, 0.918);
+  border-radius: 100px;
 }
 
 .parallaxMenuHamburgesa {
@@ -34,9 +35,17 @@ header {
 }
 
 .fondoListaDesplegable {
-  background-color: #3ac218;
+  background-color: blanchedalmond;
   height: 100%;
-  border-color: #3ac218;
+  border-color: blanchedalmond;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
 }
 
 .parallax {
@@ -249,9 +258,27 @@ span nav ul li a {
   cursor: pointer;
 }
 
+.card:hover {
+  animation-name: Horizontal;
+  animation-duration: 0.5s;
+}
+
+@keyframes Horizontal {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
 .card-mid {
   height: 71px;
   cursor: pointer;
+}
+
+.card-mid:hover {
+  animation-name: Horizontal;
+  animation-duration: 0.5s;
 }
 
 .card-midMedida {
@@ -435,6 +462,13 @@ h2::after {
   border-color: #3ac218;
 }
 
+.anchoFormulario {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
 @media (max-width: 1024px) {
   .trianguloRosa {
     left: 20px;
@@ -481,41 +515,11 @@ h2::after {
   background-color: black;
 }
 
-.footerParaIndex {
-  margin: 0;
-}
-
-.flexboxparafooter {
-  display: flex;
-}
-.flexboxparafooter__primeraseccion {
-  justify-content: space-evenly;
-}
-.flexboxparafooter__primeraseccion--centrar {
-  text-align: center;
-  margin-top: 15px;
-}
-.flexboxparafooter__segundaseccion {
-  justify-content: space-evenly;
-  margin-top: 15px;
-}
-
-.tamanoImagen {
-  width: 50px;
-  height: 50px;
-}
-
-.tamanoMapa {
-  width: 60px;
-  height: 60px;
-}
-
-.tamanoTexto {
-  font-size: 13px;
-}
-
 .flechita {
   text-align: right;
+}
+.flechita svg {
+  stroke: blanchedalmond;
 }
 
 /* PRUEBA DE JERARQUIZAR ARCHIVOS */
@@ -561,11 +565,10 @@ h2::after {
   font-size: 15px;
   padding: 5px;
 }
-.esquematizarArchivosSeccionDos div img {
+.esquematizarArchivosSeccionDos div svg {
   width: 20px;
   height: 20px;
-  background-color: blanchedalmond;
-  border-radius: 100px;
+  stroke: blanchedalmond;
 }
 
 @media (max-width: 1024px) {

@@ -12,28 +12,27 @@
     display:flex;
 } 
 
-    .lines{
+.lines{
         margin-left:40px;
         margin-top:35px; 
-    }
+}
 
-    .dot{
-        width:14px;
-        height:14px;
-        background: $colorAzul;
-        border-radius:7px;
-    }
+.dot{
+    width:14px;
+    height:14px;
+    background: $colorAzul;
+    border-radius:7px;
+}
 
-    .line{
-        height:80px;
-        width:2px;
-        background: $colorAzul;
-        margin-left:5.3px;
-    }
+.line{
+    height:80px;
+    width:2px;
+    background: $colorAzul;
+    margin-left:5.3px;
+}
     
-    .cards{
-        margin-left:12px;
-
+.cards{
+    margin-left:12px;
         h4{
             font-style: normal;
             font-weight: bold;
@@ -41,22 +40,22 @@
             line-height: 19px;
             margin-left:25px;
             margin-bottom:5px; 
-            
-            }
-                    
-                p{
+
+        }
                 
-                    
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 18px;
-                    line-height: 22px; 
-                    
-                    margin-left:25px; 
-                }       
-    }
+        p{
+        
+            
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px; 
+            
+            margin-left:25px; 
+        }       
+}
     
-    .card {
+.card {
     width: 600px;
     height: 93px;
     padding-top:25px;
@@ -64,14 +63,30 @@
     border-color: rgb(236, 225, 172); 
     margin-bottom:10px;
     cursor: pointer;
+    
 }
-  
 
-  .card-mid {      
+.card:hover {
+    animation-name: Horizontal;
+    animation-duration: 0.5s;
+}
+
+@keyframes Horizontal {
+    0% {transform: translateX(0px);}
+    100% {transform: translateX(20px);}
+}
+
+
+.card-mid {      
         height:71px;
         cursor: pointer;
     }
-    
+
+.card-mid:hover {
+    animation-name: Horizontal;
+    animation-duration: 0.5s;
+}
+
 .card-midMedida {
     margin-top: 45px;
 }
@@ -110,5 +125,4 @@
 }
 
 
- 
- 
+

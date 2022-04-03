@@ -59,6 +59,14 @@ $mapColorBotones:(izquierda:$colorRosa,derecha:$colorVerde);
 } 
 
 
+.anchoFormulario {
+    width: 80%;
+    display: flex;
+    flex-direction: column; 
+    margin: 0 auto; 
+}
+
+
 
 @media (max-width:1024px) {
 
