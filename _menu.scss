@@ -1,5 +1,7 @@
 header {
     box-shadow: 0 10px 25px black ;
+    width: 100%;
+    height: 200px;
 }
 
 .menuResponsive{
@@ -15,6 +17,9 @@ header {
     border-radius: 100px;
 }
 
+.tamañoContenedor {
+    height: 100%;
+}
 
 .parallaxMenuHamburgesa{
     background-image: url("./IMAGENES/HEADER/BANNER\ CARO\ -\ RESPONSIVE.png");
@@ -33,9 +38,9 @@ header {
     opacity: 0.9;
     width: 100%;
     height: 100%;
-    text-align: center;
-    
+    text-align: center;   
 } 
+
 
 .parallax{
     background-image: url("./IMAGENES/HEADER/banner-caro-2.gif");
@@ -93,6 +98,14 @@ span nav ul li{
     color: white;
     }
 }
+
+
+@media (max-width:768px){
+    header {
+        margin-bottom: 100px;
+    }
+}
+
 
   @media (max-width:768px) {
 
